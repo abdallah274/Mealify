@@ -1,0 +1,140 @@
+:root:has(.mode input:checked) {
+  --primary-hue: 35;
+  --primary-saturation: 72%;
+  --primary-lightness: 44%;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+  --color-default: #fff;
+  --color-secondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --color-light-gray: #252525;
+}
+
+body:has(.mode input:checked) {
+  background-color: #202020;
+}
+
+/* chefs cards */
+body:has(.mode input:checked) .chefs-cards .card {
+  background-color: #2b2b2b;
+  box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+body:has(.mode input:checked) .card picture::before {
+  background-image: url(../images/team-shape-dark.svg);
+}
+
+body:has(.mode input:checked) .chefs-cards .card .card-content h3,
+body:has(.mode input:checked) .chefs-cards .card .card-content span,
+body:has(.mode input:checked) .chefs-cards .card .card-content p {
+  color: #eaeaea;
+}
+
+/* navbar */
+body:has(.mode input:checked) nav {
+  background-color: #2b2b2b;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+body:has(.mode input:checked) nav ul li a {
+  color: #fff;
+}
+
+body:has(.mode input:checked) nav ul li a:hover {
+  color: #fff;
+}
+
+body:has(.mode input:checked) .logo {
+  color: #fff;
+}
+
+body:has(.mode input:checked) .logo::after {
+  color: var(--color-primary);
+}
+
+/* active section underline */
+body:has(#home:target) .home-link::before,
+body:has(#Chefs:target) .chefs-link::before,
+body:has(#Gallery:target) .gallery-link::before,
+body:has(#Contact:target) .contact-link::before {
+  width: 100%;
+}
+
+/* toggle icons */
+body:has(.mode input:checked) .mode .light {
+  display: block;
+}
+
+body:has(.mode input:checked) .mode .dark {
+  display: none;
+}
+
+/* video button in header */
+body:has(.mode input:checked) .video-btn .icon::before {
+  background-color: #2b2b2b;
+}
+
+body:has(.mode input:checked) .video-btn i {
+  color: var(--color-primary);
+}
+
+/* links and other text */
+body:has(.mode input:checked) a,
+body:has(.mode input:checked) span {
+  color: #fff;
+}
+/* contact */
+body:has(.mode input:checked) .contact {
+  background-color: #1f1f1f;
+}
+
+body:has(.mode input:checked) .contact-card {
+  background-color: #2b2b2b;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+body:has(.mode input:checked) .contact-card .icon {
+  background-color: #e03a3c;
+  color: #fff;
+}
+
+body:has(.mode input:checked) .contact-card .info h3 {
+  color: #fff;
+}
+
+body:has(.mode input:checked) .contact-card .info p {
+  color: #ccc;
+}
+
+body:has(.mode input:checked) .contact-card .info p strong {
+  color: #fff;
+}
+
+body:has(.mode input:checked) .contact-form {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body:has(.mode input:checked) .contact-form input,
+body:has(.mode input:checked) .contact-form textarea {
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+body:has(.mode input:checked) .contact-form input:focus,
+body:has(.mode input:checked) .contact-form textarea:focus {
+  border-color: #e03a3c;
+  box-shadow: 0 0 5px rgba(224, 58, 60, 0.5);
+}
+
+body:has(.mode input:checked) .contact .btn-main {
+  background-color: #e03a3c;
+  color: #fff;
+}
+
+body:has(.mode input:checked) .contact .btn-main:hover {
+  background-color: #ce1212;
+}

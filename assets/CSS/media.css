@@ -1,0 +1,108 @@
+/* ========== CONTAINER BREAKPOINTS ========== */
+@media (min-width: 576px) {
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+@media (min-width: 1400px) {
+  .container { max-width: 1320px; }
+}
+
+/* ========== HEADER ========== */
+@media (min-width: 1200px) {
+  header { min-height: 100vh; }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container .header-content { margin-top: 30px; }
+  header .btn-main { --border-radius: 100vh; }
+}
+
+/* ========== NAVBAR ========== */
+@media (max-width: 1200px) {
+  .menu-icon { display: block; }
+  nav .container ul {
+    transform: translateX(100%);
+    position: absolute;
+    background-color: #fff;
+    flex-direction: column;
+    width: 350px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-inline: 10px;
+    gap: 15px;
+  }
+  nav .close-icon { display: block; }
+  nav .mode { margin-left: auto; margin-right: 20px; }
+}
+
+/* ========== CHEFS CARDS ========== */
+@media (max-width: 992px) {
+  .chefs-cards .card { width: calc(calc(100% - var(--gap)) / 2); }
+}
+@media (max-width: 768px) {
+  .chefs-cards .card { width: 100%; }
+}
+
+/* ========== GALLERY ========== */
+@media (max-width: 1400px) { .gallery-imgs { height: 1025px; } }
+@media (max-width: 1200px) { .gallery-imgs { height: 860px; } }
+@media (max-width: 992px) {
+  .gallery-imgs { height: 1400px; }
+  .gallery-imgs picture { width: calc(calc(100% - var(--gap)) / 2); }
+  .pizza { order: 1; }
+  .burger { order: 2; }
+  .omelette { order: 4; }
+  .kofta { order: 7; }
+  .pizza-slices { order: 3; }
+  .steak { order: 5; }
+}
+@media (max-width: 768px) {
+  .gallery-imgs { height: auto; }
+  .gallery-imgs picture { width: 100%; }
+}
+
+/* ========== CONTACT SECTION ========== */
+@media (max-width: 991px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* ========== FOOTER ========== */
+@media (max-width: 1200px) {
+  footer :is(.about, .contact-details) {
+    width: calc(calc(100% - var(--gap)*2)/2);
+    order: 1;
+  }
+  footer :is(.subscription) {
+    width: 100%;
+    order: 2;
+  }
+}
+@media (max-width: 768px) {
+  footer :is(.about, .contact-details, .subscription) {
+    width: 100%;
+  }
+}
+
+
